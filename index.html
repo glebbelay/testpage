@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add text</title>
+    <style>
+      body {
+        background: #b2fccc;
+        font-family: system-ui;
+        
+        
+      }
+      #button1{
+        appearance: none;
+        border: 0;
+        border-radius: 5px;
+        background: #1e4d40;
+        color: #fff;
+        padding: 8px 16px;
+        font-size: 16px;
+        margin: 15px;
+      }
+      textarea {
+        width:100%;
+        resize: vertical, horizontal;
+        padding:15px;
+        border-radius:15px;
+        border: none;
+        box-shadow:4px 4px 10px rgba(0,0,0,0.06);
+        height:150px;
+        width: 180px;;
+
+      }
+      #name{
+        width:100%;
+        resize: vertical, horizontal;
+        padding:15px;
+        border-radius:15px;
+        border: none;
+        box-shadow:4px 4px 10px rgba(0,0,0,0.06);
+        height:15px;
+        width: 180px;;
+
+      }
+      fieldset {
+          border:0 none;
+      }
+      p{
+        margin: 15px ;
+      }
+      h1{
+        margin: 15px 
+      }
+      h2{        
+        margin: 15px 
+      }
+    </style>
+</head>
+<body>
+    <button id ="button1" onclick="window.location.href = 'page2.html'">Список текстов</button>
+    <h1>Добавьте текст</h1>
+    <form class="g-form" id="g-form-1" method="POST" action="" autocomplete="off">
+        <h2 class="g-form__title g-form__title_main">Команды:</h2>
+
+        <p>
+          ~спрятать слово
+          <br>
+          +<b>выделить жирным</b>
+          <br>
+          *<i>выделить курсивом</i>
+          <br>
+          ^<u>подчеркнуть</u>
+
+        </p>
+
+        <h2 class="g-form__title g-form__title_respond"></h2>
+        <div class="g-form__preloader"></div>
+        <div class="g-form__inputs">
+
+
+          <fieldset class="g-form__input-wrapper">
+            <input class="g-form__input g-form__input_name" id="name" name="Имя" placeholder="Введите название текста" required>
+          </fieldset>
+          
+          <fieldset class="g-form__input-wrapper">
+            <textarea id="message" name="Сообщение" rows="10" cols="180"
+            placeholder="Введите сообщение"></textarea>
+          </fieldset>
+       
+
+          <div class="g-form__button-wrapper">
+            <button id ="button1" class="g-form__button">Отправить текст</button>
+          </div>
+
+        </div>
+      </form>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="js/addText.js"></script>
+
+</body>
+</html>
